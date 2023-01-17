@@ -1,9 +1,10 @@
 {
   "name": "cuuduongthancong-clone-ts",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "homepage":"https://nhat-tien.github.io/cuuduongthancong-clone",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
