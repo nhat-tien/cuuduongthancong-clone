@@ -1,0 +1,9 @@
+@import './variables';
+
+.App {
+  background-color: $color-background;
+  .canvas {
+    margin-top: 40px;
+    height: 320px;
+  }
+}
