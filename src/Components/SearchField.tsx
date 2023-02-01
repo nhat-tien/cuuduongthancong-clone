@@ -6,15 +6,15 @@ interface itemData {
 }
 
 interface props {
-    data: Array<itemData>,
+    data: itemData[],
 }
 
 export default function SearchField({ data }: props) {
 
     return (
-    <div className="search-container">
-        {data.map((item: itemData, index: number) => 
-        <a className="search-item" href={item.href} key={index}>{item.text}</a>
+    <div className="search-field">
+        {data.map((item) => 
+        <a className="search-field__item" href={item.href} key={item.text}>{item.text}</a>
         )}
     </div>
     )

@@ -1,6 +1,8 @@
-.search-container {
-    display: flex;
-    .search-item {
-        border: 2px solid white;
-    }
+.search-field {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.search-field__item {
+    font-size: 1.5rem;
 }
