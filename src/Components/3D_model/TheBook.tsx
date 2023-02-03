@@ -1,9 +1,8 @@
 import * as THREE from 'three'
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
 import { useFrame, ThreeElements, useLoader } from '@react-three/fiber'
-import { TextureLoader } from 'three';
-import BookCover from '../../assets/images';
-
+import { TextureLoader } from 'three'
+import BookCover from '../../assets/images'
 
 export default function TheBook(props : ThreeElements['mesh']) {
     const mesh = useRef<THREE.Mesh>(null!);

@@ -1,0 +1,28 @@
+@import './variables';
+
+.search {
+    width: 100%;
+    margin: 1.5em auto;
+    text-align: center;
+    
+    .search-bar {
+        border-radius: 99px;
+        border: 2px solid $color-green;
+        padding: 0.5em 2em;
+        width: 60%;
+        min-width: 200px;
+        max-width: 400px;
+        font-size: 1.5rem;
+        background-color: transparent;
+        caret-color: $color-green;
+        color: white;
+
+    }
+}
+
+.icon-input {
+    width: 25px;
+    position: relative;
+    left: 30px;
+    top: 7px;
+}

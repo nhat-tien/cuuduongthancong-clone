@@ -2,7 +2,8 @@ import { useEffect, useState } from "react"
 import axios from "axios";
 import Spin from "./Spin";
 import '../Styles/Search.scss';
-import SearchField from "./SearchField";
+import DataField from "./DataField";
+import icon from "../assets/icons/glass-circle.svg"
 
 interface itemData {
   text: string,
@@ -38,13 +39,18 @@ export default function Search() {
     const dataFiltered = data.filter((item: itemData) => isMatch(item.text, input));
 
     return (
-		<>
-        <input className="search-bar" onChange={handleChange}></input>
+      <>
+      <div className="search">
+        <img src={icon} className="icon-input"/>
+        <input className="search-bar" onChange={handleChange} value={input}></input>
+      </div>
 				{ loading 
-        ? <Spin /> 
-        : <SearchField data={dataFiltered} />
+        ? <Spin />
+        : (data.length > 0 ) 
+        ? <DataField data={dataFiltered} />
+        : <p className="err-network-mess">🚧 Có vấn đề về kết nối Internet</p>
         }
-		</>
+      </>
     )
 }
 
@@ -66,3 +72,5 @@ function removeAccent(str: string): string {
 
   return str;
 }
+
+

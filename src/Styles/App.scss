@@ -2,6 +2,8 @@
 
 .App {
   background-color: $color-background;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
   .canvas {
     margin-top: 40px;
     height: 320px;
