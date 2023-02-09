@@ -1,13 +1,13 @@
 import '../Styles/Header.scss'
-import { useEffect } from 'react'
 import { useScrollDirection } from '../Hooks';
+import logoUrl from '../assets/logo.png'
 
-export default function Header(): JSX.Element {
+export default function Header() {
     const scrollDirection = useScrollDirection();
 
     return (
-        <header className={`header ${scrollDirection == 'down' ? 'down' : 'up'}`} >
-            <h1>Xin chao</h1>
+        <header className={`header ${scrollDirection ?? 'up'}`}>
+            <img src={logoUrl} height={60}/>
         </header>
     )
 }
