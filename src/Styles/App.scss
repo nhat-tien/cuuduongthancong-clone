@@ -1,11 +1,18 @@
 @import './variables';
 
 .App {
-  background-color: $color-background;
+
   min-height: 100vh;
-  font-family: 'Montserrat', sans-serif;
-  .canvas {
-    margin-top: 60px;
+  padding-top: 60px;
+  
+	font-family: 'Montserrat', sans-serif;
+  
+	background-color: $color-background;
+
+	.canvas {
     height: 320px;
+  }
+  .canvas canvas {
+    width: 160px;
   }
 }

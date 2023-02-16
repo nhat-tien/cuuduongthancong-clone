@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
 import axios from "axios";
+
 import Spin from "./Spin";
-import '../Styles/Search.scss';
 import DataField from "./DataField";
+
 import icon from "../assets/icons/glass-circle.svg"
+import '../styles/Search.scss';
 
 interface itemData {
   text: string,
@@ -42,7 +44,12 @@ export default function Search() {
       <>
       <div className="search">
         <img src={icon} className="icon-input"/>
-        <input className="search-bar" onChange={handleChange} value={input}></input>
+        <input 
+        className="search-bar" 
+        onChange={handleChange} 
+        value={input}
+        placeholder="Nhập chủ đề ...."
+        ></input>
       </div>
 				{ loading 
         ? <Spin />

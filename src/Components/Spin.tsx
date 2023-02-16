@@ -1,4 +1,4 @@
-import '../Styles/Spin.scss'
+import '../styles/Spin.scss'
 
 export default function Spin() {
     return (

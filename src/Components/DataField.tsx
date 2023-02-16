@@ -1,16 +1,16 @@
-import '../Styles/DataField.scss'
+import '../styles/DataField.scss'
 
 interface itemData {
     text: string,
     href: string,
 }
 
-interface props {
+interface Props {
     data: itemData[],
 }
 
 
-export default function DataField({ data }: props) {
+export default function DataField({ data }: Props) {
 
     return (
     <div className="data-field">

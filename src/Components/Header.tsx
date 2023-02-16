@@ -1,5 +1,5 @@
 import '../Styles/Header.scss'
-import { useScrollDirection } from '../Hooks';
+import { useScrollDirection } from '../hooks';
 import logoUrl from '../assets/logo.png'
 
 export default function Header() {
